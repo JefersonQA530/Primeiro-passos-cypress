@@ -7,12 +7,7 @@
   },
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
   "description": "",
-  "devDependencies": {
-    "cypress": "^14.4.0"
-  }
-=======
   "devDependencies": {
     "cypress": "^14.4.0"
   },
@@ -181,7 +176,5 @@
     "wrap-ansi": "^7.0.0",
     "wrappy": "^1.0.2",
     "yauzl": "^2.10.0"
-  },
-  "description": ""
->>>>>>> 8b0202b (Readme.md)
+  }
 }
