@@ -23,9 +23,11 @@ return selectors
         
 }
 accessMyInfoPage() {
-    cy.get(this.selectorsList().FirstNameField).clear().type('NomeTeste')
-    cy.get(this.selectorsList().LastnameField).clear().type('TesteLastName')
-    cy.get(this.selectorsList().MiddleName).clear().type('TesteMiddleName')
+    cy.get(this.selectorsList().FirstNameField).clear().type(chance.first())
+    cy.get(this.selectorsList().LastnameField).clear().type(chance.last())
+    cy.get(this.selectorsList().MiddleName).clear().type(chance.string())
+}
+accessMyInfoPage2(){
     cy.get(this.selectorsList().GenericField).eq(3).clear().type('Employee')
     cy.get(this.selectorsList().GenericField).eq(4).clear().type('Other Id')
     cy.get(this.selectorsList().GenericField).eq(5).clear().type('DriversLicensteste')
@@ -35,10 +37,13 @@ accessMyInfoPage() {
    cy.get(this.selectorsList().TomaTomaToma).click()
    cy.get(this.selectorsList().TomaTomaTomaToma).click()
     cy.get(this.selectorsList().SubmitButton).click()
+}
     //cy.get(this.selectorsList().GenericCombobox).eq(0).click({force:true})
    //  cy.get(this.selectorsList().secondItemCombobox).click()
      //cy.get(this.selectorsList().GenericCombobox).eq(1).click({force:true})
      //cy.get(this.selectorsList().DataCloseButton).click()
-}
+
+    
+
 }
 export default MyInfoPage
